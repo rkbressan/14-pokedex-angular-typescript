@@ -6,5 +6,47 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokemon-list.component.sass']
 })
 export class PokemonListComponent {
+  //Criei uma var pública chamada pokemons
+  public pokemons: Pokemon[] = [
+    {
+      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
+      number: 1,
+      name: 'Bulbasaur',
+      types: [
+        Type.Grass,
+        Type.Poison,
+      ]
+    }
+  ];
+}
 
+//Criei uma interface para o tipo
+export interface Pokemon {
+  image: string;
+  number: number;
+  name: string;
+  types: Type[];
+}
+
+//Criei o enum para os tipos
+//É recomendado repetir o nome
+export enum Type {
+  Bug = 'Bug',
+  Dark = 'Dark',
+  Dragon = 'Dragon',
+  Electric = 'Electric',
+  Fairy = 'Fairy',
+  Fighting = 'Fighting',
+  Fire = 'Fire',
+  Flying = 'Flying',
+  Ghost = 'Ghost',
+  Grass = 'Grass',
+  Ground = 'Ground',
+  Ice = 'Ice',
+  Normal = 'Normal',
+  Poison = 'Poison',
+  Psychic = 'Psychic',
+  Rock = 'Rock',
+  Steel = 'Steel',
+  Water = 'Water'
 }
