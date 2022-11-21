@@ -1,5 +1,5 @@
 # pokedex-angular-typescript
- :seedling: Minha primeira aplicação usando Angular e Typescript, estou bem animado!
+ :seedling: Minha primeira aplicação usando Angular e TypeScript, estou bem animado!
  
  # PokedexAngular
 
