@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokemon-card.component.sass']
 })
 export class PokemonCardComponent {
-
+  
 }
