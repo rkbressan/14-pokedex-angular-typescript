@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { PokemonService } from '../_services/pokemon.service';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -10,46 +9,41 @@ export class PokemonListComponent {
   //Criei uma var pública chamada pokemons
   public pokemons: Pokemon[] = [
     {
-        image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
-        number: 1,
-        name: 'Bulbasaur',
-        types: [
-          Type.Grass,
-          Type.Poison,
-        ],
-      },
-      {
-        image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png',
-        number: 2,
-        name: 'Ivysaur',
-        types: [
-          Type.Grass,
-          Type.Poison,
-        ],
-      },
-      {
-        image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png',
-        number: 3,
-        name: 'Venosaur',
-        types: [
-          Type.Grass,
-          Type.Poison,
-        ],
-      },
-      {
-        image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png',
-        number: 4,
-        name: 'Charmander',
-        types: [
-          Type.Fire,
-        ],
-      },
-    ];
-  
-  constructor(
-    public pokemonService: PokemonService
-    ) {
-    }
+      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png',
+      number: 1,
+      name: 'Bulbasaur',
+      types: [
+        Type.Grass,
+        Type.Poison,
+      ],
+    },
+    {
+      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/002.png',
+      number: 2,
+      name: 'Ivysaur',
+      types: [
+        Type.Grass,
+        Type.Poison,
+      ],
+    },
+    {
+      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/003.png',
+      number: 3,
+      name: 'Venosaur',
+      types: [
+        Type.Grass,
+        Type.Poison,
+      ],
+    },
+    {
+      image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/004.png',
+      number: 4,
+      name: 'Charmander',
+      types: [
+        Type.Fire,
+      ],
+    },
+  ];
 }
 
 //Criei uma interface para o tipo
